@@ -21,6 +21,7 @@ for (const button of buttons) {
         amountInput.value = '';
         currentMainBalance -= amountToAdd;
         mainBalance.innerText = currentMainBalance;
+        document.getElementById('my_modal_5').showModal();
 
         const container = document.getElementById('history-parent');
         const newDiv = document.createElement('div');

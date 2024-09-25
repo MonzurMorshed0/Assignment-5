@@ -23,7 +23,7 @@
     <header class="sticky top-0 z-10">
         <div class="px-16 py-5 navbar backdrop-blur-2xl bg-[#e0dad857]">
             <div class="navbar-start">
-                <button class="btn bg-[#B4F461] font-semibold text-xl">Blog</button>
+                <a href="./blog.html"><button class="btn bg-[#B4F461] font-semibold text-xl">Blog</button></a>
             </div>
             <div class="navbar-center gap-4">
                 <img src="./assets/logo.png" alt="">
@@ -45,6 +45,24 @@
         </div>
     </header>
     <main>
+        <!-- Donation Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_5" class="text-center modal modal-bottom sm:modal-middle">
+        <div class="flex-col items-center justify-center modal-box">
+            <h1 class="py-2 font-bold text-2xl">Congrates!</h1>
+            <div class="flex items-center justify-center">
+                <img class="max-w-xs" src="./assets/coin.png" alt="">
+            </div>
+            <p class="py-2">You Have Donated for Humankind</p>
+            <h4 class="py-2 font-semibold text-xl">Successfully</h4>
+            <div class="py-2 flex justify-center items-center modal-action">
+            <form method="dialog">
+                <button class="btn">close confirmation</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+
         <!-- Cards -->
         <section id="donate-section" class="py-8">
             <!-- card 1 -->
