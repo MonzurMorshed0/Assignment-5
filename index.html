@@ -38,16 +38,16 @@
         
         <!-- Banner -->
         <div class="backdrop-blur-2xl">
-            <div class="pt-12 text-center">
-                <button class="btn bg-[#B4F461] font-semibold text-xl">Donate</button>
-                <button class="btn bg-white font-medium text-xl">History</button>
+            <div id="button-container" class="pt-12 text-center">
+                <button id="donate-button" class="btn hover:bg-[#B4F461] bg-[#B4F461] font-semibold text-xl">Donate</button>
+                <button id="history-button" class="btn bg-white font-medium text-xl">History</button>
             </div>
             <div class="divider"></div>
         </div>
     </header>
     <main>
         <!-- Cards -->
-        <section class="py-8">
+        <section id="donate-section" class="py-8">
             <!-- card 1 -->
             <div class=" my-4 border-2 p-8 w-11/12 mx-auto card lg:card-side">
                 <figure class="w-1/2">
@@ -111,6 +111,7 @@
                 </div>
               </div>
         </section>
+        <script src="./js/pages.js"></script>
     </main>
     <footer>
         <div class="bg-[#e0dad857] h-28"></div>
