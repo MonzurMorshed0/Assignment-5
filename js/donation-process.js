@@ -9,7 +9,8 @@ for (const button of buttons) {
         const amountToAdd = parseFloat(amountInput.value);
         const mainBalance = document.getElementById('balance');
         let currentMainBalance = parseFloat(mainBalance.innerText);
-
+        const cardTitle = card.querySelector('.selected-card-title')
+        let selectTitle = cardTitle.innerText;
         if (isNaN(amountToAdd) || amountToAdd <= 0) {
             alert("Invalid Donation Amount");
             return;
@@ -20,5 +21,19 @@ for (const button of buttons) {
         amountInput.value = '';
         currentMainBalance -= amountToAdd;
         mainBalance.innerText = currentMainBalance;
-    });
+
+        const container = document.getElementById('history-parent');
+        const newDiv = document.createElement('div');
+        newDiv.className = 'border-2 rounded-md mx-24 my-6 p-4';
+        const title = document.createElement('h4');
+        title.className = 'font-semibold text-xl';
+        title.innerText = amountToAdd + ' Taka is Donated for ' + selectTitle;
+        const paragraph = document.createElement('p');
+        const currentDate = new Date();
+        paragraph.className = 'bg-[#e0dad857]'
+        paragraph.innerText = 'Date :' + currentDate.toString();
+        newDiv.appendChild(title);
+        newDiv.appendChild(paragraph);
+        container.appendChild(newDiv);
+        })
 }

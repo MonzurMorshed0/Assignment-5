@@ -5,6 +5,8 @@ document.getElementById('history-button')
     document.getElementById('history-button').classList.add('bg-[#B4F461]', 'font-semibold', 'hover:bg-[#B4F461]') ;
     document.getElementById('history-button').classList.remove('bg-white', 'font-medium') ;
     document.getElementById('donate-section').classList.add('hidden') ;
+    document.getElementById('history-parent').classList.remove('hidden') ;
+
 })
 document.getElementById('donate-button')
 .addEventListener('click', function(){
@@ -13,4 +15,5 @@ document.getElementById('donate-button')
     document.getElementById('donate-button').classList.add('bg-[#B4F461]', 'font-semibold', 'hover:bg-[#B4F461]') ;
     document.getElementById('donate-button').classList.remove('bg-white', 'font-medium') ;
     document.getElementById('donate-section').classList.remove('hidden') ;
+    document.getElementById('history-parent').classList.add('hidden') ;
 })
